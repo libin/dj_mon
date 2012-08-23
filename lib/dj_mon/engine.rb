@@ -3,6 +3,7 @@ module DjMon
 
     isolate_namespace DjMon
 
+    config.autoload_paths += %W(#{config.root}/lib)
     config.dj_mon = ActiveSupport::OrderedOptions.new
     config.dj_mon.username = "dj_mon"
     config.dj_mon.password = "password"
